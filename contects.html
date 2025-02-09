@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contact">
+    <div class="image-section">
+        <img src="assesets/logo.jpeg" alt="Contact Us" style="border-radius: 20px">
+      
+    </div>
+    <div class="form-section">
+        <h2 class="hhh"><span class="tt">Contact</span> Us</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Phone Number">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+<style>
+    .tt{
+        color: aqua;
+    }
+    .hhh{
+        text-align: center;
+        font-family: Poppins;
+    }
+    .contact {
+        display: flex;
+        padding: 40px;
+        max-width: 1200px;
+        margin: 50px auto;
+        background: #626161;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        border-radius: 15px;
+    }
+    .image-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-section > img{
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+    }
+    .form-section h2 {
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 2.2em;
+    }
+    .form-section input, .form-section textarea {
+        width: calc(100% - 30px); /* Adjusted to account for padding */
+        margin: 15px 0;
+        padding: 15px;
+        border: 2px solid #eee;
+        border-radius: 8px;
+        transition: border-color 0.3s ease;
+        box-sizing: border-box; /* Added to include padding in width calculation */
+    }
+    .form-section input:focus, .form-section textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+    button {
+        width: 100%;
+        background: linear-gradient(45deg, #007bff, #00a6ff);
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+    button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+        .contact {
+            flex-direction: column;
+            padding: 20px;
+            margin: 20px;
+        }
+        .image-section > img {
+            width: 200px;
+            height: 200px;
+        }
+        .form-section h2 {
+            font-size: 1.8em;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .contact {
+            padding: 15px;
+            margin: 10px;
+        }
+        .image-section > img {
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+        }
+        .form-section h2 {
+            font-size: 1.5em;
+        }
+        .form-section input, .form-section textarea {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 14px;
+        }
+    }
+</style>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: info@scholarsschool.edu</p>
+            <p>Phone: +92 3120897264</p>
+            <p>Address: Opposite to sheekla hospital New Abadi Alipur Islamabad</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="index.html">Admissions</a></li>
+                <li><a href="faculity.html">Faculty</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com/scholars.academy.isb/"><img src="assesets/fb.png" alt="Facebook"></a>
+                <a href="https://www.facebook.com/scholars.academy.isb/"><img src="assesets/isntag.jpeg" alt="Instagram"></a>
+                <a href="https://www.facebook.com/scholars.academy.isb/"><img src="assesets/twit.jpeg" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Scholars School and College. All rights reserved by Munawar Abbas Web Developer.</p>
+    </div>
+</footer>
+</body>
+</html>
